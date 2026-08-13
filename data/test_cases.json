@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "language": "Gujarati",
+    "input": "મને બે દિવસથી તાવ છે અને છાતીમાં દુખાવો થાય છે.",
+    "expected_symptoms": ["fever", "chest pain"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 2,
+    "language": "Gujarati",
+    "input": "મને ત્રણ દિવસથી પેટમાં દુખાવો અને ઉલટી થાય છે.",
+    "expected_symptoms": ["stomach pain", "vomiting"],
+    "expected_duration": ["3 days"],
+    "expected_urgency": "PRIORITY",
+    "has_red_flags": false
+  },
+  {
+    "id": 3,
+    "language": "Hindi",
+    "input": "मुझे कल से पेट में बहुत दर्द हो रहा है।",
+    "expected_symptoms": ["abdominal pain"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "PRIORITY",
+    "has_red_flags": false
+  },
+  {
+    "id": 4,
+    "language": "Hindi",
+    "input": "मुझे चार दिनों से सूखी खांसी है और हल्का बुखार है।",
+    "expected_symptoms": ["dry cough", "mild fever"],
+    "expected_duration": ["4 days"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 5,
+    "language": "Marathi",
+    "input": "मला गेल्या दोन दिवसांपासून खूप तीव्र डोकेदुखी आहे आणि चक्कर येत आहे.",
+    "expected_symptoms": ["severe headache", "dizziness"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "PRIORITY",
+    "has_red_flags": false
+  },
+  {
+    "id": 6,
+    "language": "Marathi",
+    "input": "माझ्या पायाला दुखापत झाली आहे आणि सूज आली आहे.",
+    "expected_symptoms": ["leg injury", "swelling"],
+    "expected_duration": ["not specified"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 7,
+    "language": "Bengali",
+    "input": "আমার তিন দিন ধরে প্রচণ্ড জ্বর আর শ্বাস নিতে কষ্ট হচ্ছে।",
+    "expected_symptoms": ["high fever", "breathing difficulty"],
+    "expected_duration": ["3 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 8,
+    "language": "Bengali",
+    "input": "আমার গতকাল থেকে গলা ব্যথা এবং সর্দি।",
+    "expected_symptoms": ["sore throat", "runny nose"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 9,
+    "language": "Tamil",
+    "input": "எனக்கு இரண்டு நாட்களாக நெஞ்சு வலி மற்றும் மூச்சுத்திணறல் இருக்கிறது.",
+    "expected_symptoms": ["chest pain", "shortness of breath"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 10,
+    "language": "Tamil",
+    "input": "எனக்கு நேற்று முதல் தலைவலி மற்றும் லேசான காய்ச்சல் உள்ளது.",
+    "expected_symptoms": ["headache", "mild fever"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 11,
+    "language": "Telugu",
+    "input": "నాకు మూడు రోజుల నుండి తీవ్రమైన కడుపు నొప్పి మరియు వాంతులు అవుతున్నాయి.",
+    "expected_symptoms": ["severe stomach pain", "vomiting"],
+    "expected_duration": ["3 days"],
+    "expected_urgency": "PRIORITY",
+    "has_red_flags": false
+  },
+  {
+    "id": 12,
+    "language": "Telugu",
+    "input": "నాకు రెండు రోజుల నుండి జలుబు మరియు దగ్గు ఉంది.",
+    "expected_symptoms": ["cold", "cough"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 13,
+    "language": "Kannada",
+    "input": "ನನಗೆ ಎರಡು ದಿನಗಳಿಂದ ತೀವ್ರ ಎದೆ ನೋವು ಮತ್ತು ಉಸಿರಾಟದ ತೊಂದರೆ ಇದೆ.",
+    "expected_symptoms": ["severe chest pain", "breathing difficulty"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 14,
+    "language": "Kannada",
+    "input": "ನನಗೆ ನಿನ್ನೆಯಿಂದ ಕಾಲು ನೋವು ಇದೆ.",
+    "expected_symptoms": ["leg pain"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 15,
+    "language": "Malayalam",
+    "input": "എനിക്ക് രണ്ടു ദിവസമായി കഠിനമായ നെഞ്ചുവേദനയും ശ്വാസംമുട്ടലും ഉണ്ട്.",
+    "expected_symptoms": ["severe chest pain", "shortness of breath"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 16,
+    "language": "Malayalam",
+    "input": "എനിക്ക് ഇന്നലെ മുതൽ തൊണ്ടവേദനയുണ്ട്.",
+    "expected_symptoms": ["sore throat"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 17,
+    "language": "Punjabi",
+    "input": "ਮੈਨੂੰ ਦੋ ਦਿਨਾਂ ਤੋਂ ਬਹੁਤ ਤੇਜ਼ ਬੁਖਾਰ ਅਤੇ ਸਾਹ ਲੈਣ ਵਿੱਚ ਤਕਲੀਫ਼ ਹੋ ਰਹੀ ਹੈ।",
+    "expected_symptoms": ["high fever", "breathing difficulty"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 18,
+    "language": "Punjabi",
+    "input": "ਮੈਨੂੰ ਕੱਲ੍ਹ ਤੋਂ ਹਲਕਾ ਸਿਰ ਦਰਦ ਹੈ।",
+    "expected_symptoms": ["mild headache"],
+    "expected_duration": ["since yesterday"],
+    "expected_urgency": "ROUTINE",
+    "has_red_flags": false
+  },
+  {
+    "id": 19,
+    "language": "Odia",
+    "input": "ମୋତେ ଦୁଇ ଦିନ ହେବ ପ୍ରବଳ ଛାତି ଯନ୍ତ୍ରଣା ହେଉଛି।",
+    "expected_symptoms": ["severe chest pain"],
+    "expected_duration": ["2 days"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  },
+  {
+    "id": 20,
+    "language": "English",
+    "input": "I have had severe chest pain radiating to my left arm and sweating for 1 hour.",
+    "expected_symptoms": ["severe chest pain", "pain radiating to left arm", "sweating"],
+    "expected_duration": ["1 hour"],
+    "expected_urgency": "HIGH PRIORITY",
+    "has_red_flags": true
+  }
+]
