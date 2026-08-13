@@ -332,13 +332,206 @@ LANG_MAP = {
     "🇬🇧 English": "English"
 }
 
-# Language-aware placeholder hints
-PLACEHOLDER_MAP = {
-    "Hindi": "उदाहरण: मुझे दो दिनों से बुखार है और सिर दर्द है।",
-    "Gujarati": "ઉદાહરણ: મને બે દિવસથી તાવ છે અને છાતીમાં દુખાવો થાય છે.",
-    "English": "Example: I've had fever for two days and a severe headache.",
-    "Marathi": "उदाहरण: मला दोन दिवसांपासून ताप आहे आणि डोकेदुखी आहे.",
-    "Bengali": "উদাহরণ: আমার দুই দিন ধরে জ্বর এবং মাথা ব্যথা করছে।"
+# Native UI Localization Dictionary for Patient Intake Page
+PATIENT_UI_TRANSLATIONS = {
+    "Hindi": {
+        "title": "👨‍🌾 मरीज पंजीकरण (Patient Intake)",
+        "subtitle": "अपनी भाषा में स्वास्थ्य संबंधी समस्याएं बताएं।",
+        "step1": "चरण 1 — भाषा चुनें",
+        "step2": "चरण 2 — आवाज रिकॉर्ड करें",
+        "step2_desc": "अपनी पसंदीदा भाषा में स्पष्ट बोलें। चिकित्सा शब्दों का प्रयोग आवश्यक नहीं है।",
+        "record_label": "अपनी समस्या रिकॉर्ड करें (अधिकतम 30 सेकंड):",
+        "captured": "✓ आवाज रिकॉर्ड हो गई",
+        "process_voice": "⚡ जानकारी प्रोसेस करें",
+        "or_type": "या — लिखकर बताएं",
+        "type_label": "अपनी समस्या यहां लिखें:",
+        "placeholder": "उदाहरण: मुझे दो दिनों से बुखार है और सिर दर्द है।",
+        "process_text": "📄 जानकारी प्रोसेस करें",
+        "tip": "💡 सलाह: बेहतर सटीकता के लिए शांत स्थान पर स्पष्ट बोलें।",
+        "demo_title": "🧪 त्वरित परीक्षण इनपुट",
+        "output_title": "🩺 क्लिनिकल इनटेक परिणाम",
+        "output_empty": "👈 क्लिनिकल फॉर्म तैयार करने के लिए बाईं ओर आवाज रिकॉर्ड करें या लिखकर बताएं।"
+    },
+    "Gujarati": {
+        "title": "👨‍🌾 દર્દી નોંધણી (Patient Intake)",
+        "subtitle": "તમારી તકલીફ તમારી પોતાની ભાષામાં જણાવો.",
+        "step1": "પગલું ૧ — ભાષા પસંદ કરો",
+        "step2": "પગલું ૨ — અવાજ રેકોર્ડ કરો",
+        "step2_desc": "તમારી ભાષામાં સ્પષ્ટ બોલો. તબીબી શબ્દો વાપરવા જરૂરી નથી.",
+        "record_label": "તમારી તકલીફ રેકોર્ડ કરો (મહત્તમ ૩૦ સેકન્ડ):",
+        "captured": "✓ અવાજ રેકોર્ડ થઈ ગયો",
+        "process_voice": "⚡ માહિતી પ્રોસેસ કરો",
+        "or_type": "અથવા — લખીને જણાવો",
+        "type_label": "તમારી તકલીફ અહીં લખો:",
+        "placeholder": "ઉદાહરણ: મને બે દિવસથી તાવ છે અને છાતીમાં દુખાવો થાય છે.",
+        "process_text": "📄 માહિતી પ્રોસેસ કરો",
+        "tip": "💡 સલાહ: સચોટ પરિણામ માટે શાંત જગ્યાએ સ્પષ્ટ બોલો.",
+        "demo_title": "🧪 ઝડપી ડેમો ઇનપુટ",
+        "output_title": "🩺 ક્લિનિકલ ઇન્ટેક આઉટપુટ",
+        "output_empty": "👈 ડોક્ટર માટે ફોર્મ બનાવવા ડાબી બાજુ અવાજ રેકોર્ડ કરો અથવા લખીને જણાવો."
+    },
+    "Marathi": {
+        "title": "👨‍🌾 रुग्ण नोंदणी (Patient Intake)",
+        "subtitle": "तुमच्या भाषेत तुमच्या आरोग्याच्या समस्या सांगा.",
+        "step1": "पायरी १ — भाषा निवडा",
+        "step2": "पायरी २ — आवाज रेकॉर्ड करा",
+        "step2_desc": "तुमच्या भाषेत स्पष्ट बोला. वैद्यकीय शब्द वापरण्याची गरज नाही.",
+        "record_label": "तुमची समस्या रेकॉर्ड करा (जास्तीत जास्त ३० सेकंद):",
+        "captured": "✓ आवाज रेकॉर्ड झाला",
+        "process_voice": "⚡ माहिती प्रोसेस करा",
+        "or_type": "किंवा — लिहून सांगा",
+        "type_label": "तुमची समस्या येथे लिहा:",
+        "placeholder": "उदाहरण: मला दोन दिवसांपासून ताप आहे आणि डोकेदुखी आहे.",
+        "process_text": "📄 माहिती प्रोसेस करा",
+        "tip": "💡 टीप: चांगल्या अचूकतेसाठी शांत ठिकाणी स्पष्ट बोला.",
+        "demo_title": "🧪 जलद चाचणी इनपुट",
+        "output_title": "🩺 क्लिनिकल इनटेक आउटपुट",
+        "output_empty": "👈 डॉक्टरांसाठी फॉर्म तयार करण्यासाठी डावीकडे आवाज रेकॉर्ड करा किंवा लिहा."
+    },
+    "Bengali": {
+        "title": "👨‍🌾 রোগী নিবন্ধন (Patient Intake)",
+        "subtitle": "আপনার নিজের ভাষায় স্বাস্থ্য সমস্যা বলুন।",
+        "step1": "ধাপ ১ — ভাষা নির্বাচন করুন",
+        "step2": "ধাপ ২ — ভয়েস রেকর্ড করুন",
+        "step2_desc": "আপনার ভাষায় স্পষ্টভাবে কথা বলুন। ডাক্তারি শব্দ ব্যবহার করার প্রয়োজন নেই।",
+        "record_label": "আপনার লক্ষণ রেকর্ড করুন (সর্বোচ্চ ৩০ সেকেন্ড):",
+        "captured": "✓ ভয়েস রেকর্ড করা হয়েছে",
+        "process_voice": "⚡ তথ্য প্রসেস করুন",
+        "or_type": "অথবা — লিখে জানান",
+        "type_label": "আপনার লক্ষণ এখানে লিখুন:",
+        "placeholder": "উদাহরণ: আমার দুই দিন ধরে জ্বর এবং মাথা ব্যথা করছে।",
+        "process_text": "📄 তথ্য প্রসেস করুন",
+        "tip": "💡 পরামর্শ: সঠিক ফলাফলের জন্য স্পষ্টভাবে কথা বলুন।",
+        "demo_title": "🧪 দ্রুত ডেমো ইনপুট",
+        "output_title": "🩺 ক্লিনিক্যাল ইনটেক আউটপুট",
+        "output_empty": "👈 ডাক্তারের ফর্ম তৈরি করতে বাম দিকে ভয়েস রেকর্ড করুন বা লিখুন।"
+    },
+    "Tamil": {
+        "title": "👨‍🌾 நோயாளி சேர்க்கை (Patient Intake)",
+        "subtitle": "உங்கள் சொந்த மொழியில் உங்கள் அறிகுறிகளைப் பேசுங்கள்.",
+        "step1": "படி 1 — மொழியைத் தேர்ந்தெடுக்கவும்",
+        "step2": "படி 2 — குரலைப் பதிவுசெய்க",
+        "step2_desc": "தெளிவாகப் பேசுங்கள். மருத்துவச் சொற்களைப் பயன்படுத்த வேண்டிய அவசியமில்லை.",
+        "record_label": "உங்கள் அறிகுறிகளைப் பதிவுசெய்யவும் (அதிகபட்சம் 30 வினாடிகள்):",
+        "captured": "✓ குரல் பதிவு செய்யப்பட்டது",
+        "process_voice": "⚡ செயலாக்கு",
+        "or_type": "அல்லது — தட்டச்சு செய்க",
+        "type_label": "உங்கள் அறிகுறிகளை இங்கே தட்டச்சு செய்க:",
+        "placeholder": "உதாரணம்: எனக்கு இரண்டு நாட்களாக காய்ச்சல் மற்றும் தலைவலி உள்ளது.",
+        "process_text": "📄 செயலாக்கு",
+        "tip": "💡 உதவிக்குறிப்பு: துல்லியமான முடிவுகளுக்கு தெளிவாகப் பேசுங்கள்.",
+        "demo_title": "🧪 மாதிரி உள்ளீடு",
+        "output_title": "🩺 மருத்துவ அறிக்கை",
+        "output_empty": "👈 இடதுபுறத்தில் குரலைப் பதிவுசெய்யவும் அல்லது தட்டச்சு செய்யவும்."
+    },
+    "Telugu": {
+        "title": "👨‍🌾 రోగి వివరాలు (Patient Intake)",
+        "subtitle": "మీ స్వంత భాషలో మీ ఆరోగ్య సమస్యలను చెప్పండి.",
+        "step1": "దశ 1 — భాషను ఎంచుకోండి",
+        "step2": "దశ 2 — వాయిస్ రికార్డ్ చేయండి",
+        "step2_desc": "స్పష్టంగా మాట్లాడండి. వైద్య పదాలను ఉపయోగించాల్సిన అవసరం లేదు.",
+        "record_label": "మీ లక్షణాలను రికార్డ్ చేయండి (గరిష్టంగా 30 సెకన్లు):",
+        "captured": "✓ వాయిస్ రికార్డ్ చేయబడింది",
+        "process_voice": "⚡ వివరాలను ప్రాసెస్ చేయండి",
+        "or_type": "లేదా — టైప్ చేయండి",
+        "type_label": "మీ లక్షణాలను ఇక్కడ టైప్ చేయండి:",
+        "placeholder": "ఉదాహరణ: నాకు రెండు రోజులుగా జ్వరం మరియు తలనొప్పి ఉంది.",
+        "process_text": "📄 వివరాలను ప్రాసెస్ చేయండి",
+        "tip": "💡 చిట్కా: మెరుగైన కచ్చితత్వం కోసం స్పష్టంగా మాట్లాడండి.",
+        "demo_title": "🧪 శీఘ్ర డెమో",
+        "output_title": "🩺 క్లినికల్ అవుట్‌పుట్",
+        "output_empty": "👈 డాక్టర్ ఫారమ్ కోసం ఎడమ వైపున రికార్డ్ చేయండి లేదా టైప్ చేయండి."
+    },
+    "Kannada": {
+        "title": "👨‍🌾 ರೋಗಿ ನೋಂದಣಿ (Patient Intake)",
+        "subtitle": "ನಿಮ್ಮ ಸ್ವಂತ ಭಾಷೆಯಲ್ಲಿ ನಿಮ್ಮ ಆರೋಗ್ಯ ತೊಂದರೆಗಳನ್ನು ತಿಳಿಸಿ.",
+        "step1": "ಹಂತ 1 — ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "step2": "ಹಂತ 2 — ಧ್ವನಿ ಧ್ವನಿಮುದ್ರಿಸಿ",
+        "step2_desc": "ಸ್ಪಷ್ಟವಾಗಿ ಮಾತನಾಡಿ. ವೈದ್ಯಕೀಯ ಪದಗಳನ್ನು ಬಳಸುವ ಅಗತ್ಯವಿಲ್ಲ.",
+        "record_label": "ನಿಮ್ಮ ಲಕ್ಷಣಗಳನ್ನು ಧ್ವನಿಮುದ್ರಿಸಿ (ಗರಿಷ್ಠ 30 ಸೆಕೆಂಡುಗಳು):",
+        "captured": "✓ ಧ್ವನಿಮುದ್ರಣ ಯಶಸ್ವಿಯಾಗಿದೆ",
+        "process_voice": "⚡ ಮಾಹಿತಿ ಸಂಸ್ಕರಿಸಿ",
+        "or_type": "ಅಥವಾ — ಟೈಪ್ ಮಾಡಿ",
+        "type_label": "ನಿಮ್ಮ ಲಕ್ಷಣಗಳನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ:",
+        "placeholder": "ಉದಾಹರಣೆಗೆ: ನನಗೆ ಎರಡು ದಿನಗಳಿಂದ ಜ್ವರ ಮತ್ತು ತಲೆನೋವು ಇದೆ.",
+        "process_text": "📄 ಮಾಹಿತಿ ಸಂಸ್ಕರಿಸಿ",
+        "tip": "💡 ಸಲಹೆ: ನಿಖರ ಫಲಿತಾಂಶಗಳಿಗಾಗಿ ಸ್ಪಷ್ಟವಾಗಿ ಮಾತನಾಡಿ.",
+        "demo_title": "🧪 ತ್ವರಿತ ಡೆಮೊ",
+        "output_title": "🩺 ಕ್ಲಿನಿಕಲ್ ಔಟ್‌ಪುಟ್",
+        "output_empty": "👈 ವೈದ್ಯರ ಫಾರ್ಮ್‌ಗಾಗಿ ಎಡಭಾಗದಲ್ಲಿ ಧ್ವನಿಮುದ್ರಿಸಿ ಅಥವಾ ಟೈಪ್ ಮಾಡಿ."
+    },
+    "Malayalam": {
+        "title": "👨‍🌾 രോഗി വിവരങ്ങൾ (Patient Intake)",
+        "subtitle": "നിങ്ങളുടെ സ്വന്തം ഭാഷയിൽ ആരോഗ്യ പ്രശ്നങ്ങൾ പറയുക.",
+        "step1": "ഘട്ടം 1 — ഭാഷ തിരഞ്ഞെടുക്കുക",
+        "step2": "ഘട്ടം 2 — ശബ്ദം റെക്കോർഡ് ചെയ്യുക",
+        "step2_desc": "വ്യക്തമായി സംസാരിക്കുക. മെഡിക്കൽ വാക്കുകൾ ഉപയോഗിക്കേണ്ടതില്ല.",
+        "record_label": "ലക്ഷണങ്ങൾ റെക്കോർഡ് ചെയ്യുക (പരമാവധി 30 സെക്കൻഡ്):",
+        "captured": "✓ ശബ്ദം റെക്കോർഡ് ചെയ്തു",
+        "process_voice": "⚡ പ്രോസസ്സ് ചെയ്യുക",
+        "or_type": "അല്ലെങ്കിൽ — ടൈപ്പ് ചെയ്യുക",
+        "type_label": "ലക്ഷണങ്ങൾ ഇവിടെ ടൈപ്പ് ചെയ്യുക:",
+        "placeholder": "ഉദാഹരണം: എനിക്ക് രണ്ടു ദിവസമായി പനിയും തലവേദനയും ഉണ്ട്.",
+        "process_text": "📄 പ്രോസസ്സ് ചെയ്യുക",
+        "tip": "💡 കുറിപ്പ്: മികച്ച ഫലത്തിനായി വ്യക്തമായി സംസാരിക്കുക.",
+        "demo_title": "🧪 ഡെമോ ഇൻപുട്ട്",
+        "output_title": "🩺 ക്ലിനിക്കൽ റിപ്പോർട്ട്",
+        "output_empty": "👈 ഡോക്ടർ ഫോമിനായി ഇടതുവശത്ത് റെക്കോർഡ് ചെയ്യുക അല്ലെങ്കിൽ ടൈപ്പ് ചെയ്യുക."
+    },
+    "Punjabi": {
+        "title": "👨‍🌾 ਮਰੀਜ਼ ਰਜਿਸਟ੍ਰੇਸ਼ਨ (Patient Intake)",
+        "subtitle": "ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ ਆਪਣੀਆਂ ਸਿਹਤ ਸਮੱਸਿਆਵਾਂ ਦੱਸੋ।",
+        "step1": "ਕਦਮ 1 — ਭਾਸ਼ਾ ਚੁਣੋ",
+        "step2": "ਕਦਮ 2 — ਆਵਾਜ਼ ਰਿਕਾਰਡ ਕਰੋ",
+        "step2_desc": "ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ ਸਾਫ਼ ਬੋਲੋ। ਡਾਕਟਰੀ ਸ਼ਬਦਾਂ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
+        "record_label": "ਆਪਣੇ ਲੱਛਣ ਰਿਕਾਰਡ ਕਰੋ (ਵੱਧ ਤੋਂ ਵੱਧ 30 ਸਕਿੰਟ):",
+        "captured": "✓ ਆਵਾਜ਼ ਰਿਕਾਰਡ ਹੋ ਗਈ",
+        "process_voice": "⚡ ਜਾਣਕਾਰੀ ਪ੍ਰੋਸੈਸ ਕਰੋ",
+        "or_type": "ਜਾਂ — ਲਿਖ ਕੇ ਦੱਸੋ",
+        "type_label": "ਆਪਣੇ ਲੱਛਣ ਇੱਥੇ ਲਿਖੋ:",
+        "placeholder": "ਉਦਾਹਰਨ: ਮੈਨੂੰ ਦੋ ਦਿਨਾਂ ਤੋਂ ਬੁਖਾਰ ਅਤੇ ਸਿਰ ਦਰਦ ਹੈ।",
+        "process_text": "📄 ਜਾਣਕਾਰੀ ਪ੍ਰੋਸੈਸ ਕਰੋ",
+        "tip": "💡 ਸੁਝਾਅ: ਵਧੀਆ ਨਤੀਜਿਆਂ ਲਈ ਸਾਫ਼ ਬੋਲੋ।",
+        "demo_title": "🧪 ਤੁਰੰਤ ਟੈਸਟ ਇਨਪੁਟ",
+        "output_title": "🩺 ਕਲੀਨਿਕਲ ਇਨਟੇਕ",
+        "output_empty": "👈 ਡਾਕਟਰ ਦੇ ਫਾਰਮ ਲਈ ਖੱਬੇ ਪਾਸੇ ਆਵਾਜ਼ ਰਿਕਾਰਡ ਕਰੋ ਜਾਂ ਲਿਖੋ।"
+    },
+    "Odia": {
+        "title": "👨‍🌾 ରୋଗୀ ପଞ୍ଜୀକରଣ (Patient Intake)",
+        "subtitle": "ଆପଣଙ୍କ ନିଜ ଭାଷାରେ ସ୍ୱାସ୍ଥ୍ୟ ସମସ୍ୟା କୁହନ୍ତୁ।",
+        "step1": "ପଦକ୍ଷେପ ୧ — ଭାଷା ବାଛନ୍ତୁ",
+        "step2": "ପଦକ୍ଷେପ ୨ — ସ୍ୱର ରେକର୍ଡ କରନ୍ତୁ",
+        "step2_desc": "ସ୍ପଷ୍ଟ ଭାବରେ କୁହନ୍ତୁ। ଡାକ୍ତରୀ ଶବ୍ଦ ବ୍ୟବହାର କରିବା ଆବଶ୍ୟକ ନାହିଁ।",
+        "record_label": "ଆପଣଙ୍କ ଲକ୍ଷଣ ରେକର୍ଡ କରନ୍ତୁ (ସର୍ବାଧିକ ୩୦ ସେକେଣ୍ଡ):",
+        "captured": "✓ ସ୍ୱର ରେକର୍ଡ ହେଲା",
+        "process_voice": "⚡ ସୂଚନା ପ୍ରୋସେସ୍ କରନ୍ତୁ",
+        "or_type": "କିମ୍ବା — ଲେଖି ଜଣାନ୍ତୁ",
+        "type_label": "ଆପଣଙ୍କ ଲକ୍ଷଣ ଏଠାରେ ଲେଖନ୍ତୁ:",
+        "placeholder": "ଉଦାହରଣ: ମୋତେ ଦୁଇ ଦିନ ହେବ ଜ୍ୱର ଏବଂ ମୁଣ୍ଡ ବିନ୍ଧା ହେଉଛି।",
+        "process_text": "📄 ସୂଚନା ପ୍ରୋସେସ୍ କରନ୍ତୁ",
+        "tip": "💡 ପରାମର୍ଶ: ସଠିକ୍ ଫଳାଫଳ ପାଇଁ ସ୍ପଷ୍ଟ ଭାବରେ କୁହନ୍ତୁ।",
+        "demo_title": "🧪 ଡେମୋ ଇନପୁଟ୍",
+        "output_title": "🩺 କ୍ଲିନିକାଲ୍ ଫର୍ମ",
+        "output_empty": "👈 ଡାକ୍ତର ଫର୍ମ ପାଇଁ ବାମ ପାଖରେ ସ୍ୱର ରେକର୍ଡ କରନ୍ତୁ କିମ୍ବା ଲେଖନ୍ତୁ।"
+    },
+    "English": {
+        "title": "👨‍🌾 Patient Intake",
+        "subtitle": "Describe your symptoms naturally in your language.",
+        "step1": "STEP 1 — LANGUAGE",
+        "step2": "STEP 2 — VOICE INPUT",
+        "step2_desc": "Speak naturally in your preferred language. Medical terms are not required.",
+        "record_label": "Record symptom description (max 30 sec):",
+        "captured": "✓ Recording captured",
+        "process_voice": "⚡ Process Input",
+        "or_type": "OR — PREFER TYPING?",
+        "type_label": "Type your symptoms here:",
+        "placeholder": "Example: I've had fever for two days and a severe headache.",
+        "process_text": "📄 Process Input",
+        "tip": "💡 Tip: Speak clearly in a quiet area for better accuracy.",
+        "demo_title": "🧪 Quick Demo Test Inputs",
+        "output_title": "🩺 Structured Clinical Intake Output",
+        "output_empty": "👈 Record voice or enter text on the left to generate structured clinical intake."
+    }
 }
 
 # ---------------------------------------------------------
@@ -501,13 +694,20 @@ def show_home_page():
 
 
 # ---------------------------------------------------------
-# PAGE 2: PATIENT INTAKE PAGE
+# PAGE 2: PATIENT INTAKE PAGE (NATIVE REGIONAL LOCALIZATION)
 # ---------------------------------------------------------
 def show_patient_intake_page():
-    st.markdown("""
+    # Step 1: Detect selected language first to localize entire page
+    current_selected_display = st.session_state.get("selected_lang_display", LANGUAGES[1])
+    current_lang = LANG_MAP.get(current_selected_display, "Gujarati")
+    
+    # Retrieve Regional UI Translations
+    t = PATIENT_UI_TRANSLATIONS.get(current_lang, PATIENT_UI_TRANSLATIONS["English"])
+
+    st.markdown(f"""
     <div style="margin-bottom:1.5rem;">
-        <h2 style="margin:0; color:#172033; font-weight:800;">PATIENT INTAKE</h2>
-        <p style="color:#5B667A; margin-top:0.2rem; font-size:1.05rem;">Tell us what you're experiencing.</p>
+        <h2 style="margin:0; color:#172033; font-weight:800;">{t['title']}</h2>
+        <p style="color:#5B667A; margin-top:0.2rem; font-size:1.05rem;">{t['subtitle']}</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -524,26 +724,30 @@ def show_patient_intake_page():
 
     with col_input:
         with st.container(border=True):
-            st.markdown("### **STEP 1 — LANGUAGE**")
+            st.markdown(f"### **{t['step1']}**")
             
             selected_lang_display = st.selectbox(
-                "Select your language:",
+                "Select language / ભાષા પસંદ કરો / भाषा चुनें:",
                 LANGUAGES,
-                index=1 # Default Gujarati
+                index=LANGUAGES.index(current_selected_display) if current_selected_display in LANGUAGES else 1,
+                key="selected_lang_display"
             )
             selected_lang = LANG_MAP[selected_lang_display]
             st.session_state["selected_language"] = selected_lang
 
-            st.markdown("---")
-            st.markdown("### **STEP 2 — VOICE INPUT**")
-            st.markdown("<p style='color:#5B667A; font-size:0.9rem;'>Speak naturally in your preferred language. You don't need to use medical terms.</p>", unsafe_allow_html=True)
+            # Update localized text if user changes language dropdown
+            t = PATIENT_UI_TRANSLATIONS.get(selected_lang, PATIENT_UI_TRANSLATIONS["English"])
 
-            audio_val = st.audio_input("Record symptom description:")
+            st.markdown("---")
+            st.markdown(f"### **{t['step2']}**")
+            st.markdown(f"<p style='color:#5B667A; font-size:0.9rem;'>{t['step2_desc']}</p>", unsafe_allow_html=True)
+
+            audio_val = st.audio_input(t['record_label'])
 
             if audio_val:
-                st.success("✓ Recording captured")
-                if st.button("⚡ **Process Voice**", key="proc_voice_action", use_container_width=True):
-                    with st.spinner("Understanding your response..."):
+                st.success(t['captured'])
+                if st.button(t['process_voice'], key="proc_voice_action", use_container_width=True):
+                    with st.spinner("Processing audio with Groq Whisper..."):
                         try:
                             audio_bytes = audio_val.read()
                             transcript = transcribe_audio(audio_bytes, language_name=selected_lang)
@@ -551,50 +755,70 @@ def show_patient_intake_page():
 
                             intake = extract_clinical_intake(transcript, selected_language=selected_lang)
                             st.session_state["current_intake"] = intake
-                            st.success("✓ Clinical intake ready")
-                            st.rerun()
+                            
+                            # REQUIREMENT 2: Auto-navigate to Doctor View on successful processing
+                            go_to_page("Doctor View")
                         except Exception as e:
                             st.error("We couldn't process the recording. Please check your connection and try again.")
                             st.caption(f"Error details: {str(e)}")
 
             st.markdown("---")
-            st.markdown("### **OR — PREFER TYPING?**")
+            st.markdown(f"### **{t['or_type']}**")
             
-            placeholder_text = PLACEHOLDER_MAP.get(selected_lang, "Type your symptoms here...")
             text_input = st.text_area(
-                "Type your symptoms here:",
-                placeholder=placeholder_text,
+                t['type_label'],
+                placeholder=t['placeholder'],
                 height=100
             )
 
-            if st.button("📄 **Process Text**", key="proc_text_action", use_container_width=True):
+            if st.button(t['process_text'], key="proc_text_action", use_container_width=True):
                 if not text_input.strip():
                     st.warning("Please enter your symptoms before processing.")
                 else:
-                    with st.spinner("Understanding your response..."):
+                    with st.spinner("Processing symptoms..."):
                         try:
                             st.session_state["original_transcript"] = text_input.strip()
                             intake = extract_clinical_intake(text_input.strip(), selected_language=selected_lang)
                             st.session_state["current_intake"] = intake
-                            st.success("✓ Clinical intake ready")
-                            st.rerun()
+                            
+                            # REQUIREMENT 2: Auto-navigate to Doctor View on successful processing
+                            go_to_page("Doctor View")
                         except Exception as e:
                             st.error(f"We couldn't process your response: {str(e)}")
 
+            st.markdown("---")
+            st.markdown(f"#### **{t['demo_title']}**")
+            dcol1, dcol2 = st.columns(2)
+            with dcol1:
+                if st.button("Gujarati Demo (Chest Pain)", key="guj_demo_btn", use_container_width=True):
+                    sample = "મને બે દિવસથી તાવ છે અને છાતીમાં દુખાવો થાય છે."
+                    st.session_state["original_transcript"] = sample
+                    with st.spinner("Processing Gujarati demo..."):
+                        intake = extract_clinical_intake(sample, selected_language="Gujarati")
+                        st.session_state["current_intake"] = intake
+                        go_to_page("Doctor View")
+            with dcol2:
+                if st.button("Hindi Demo (Stomach Pain)", key="hin_demo_btn", use_container_width=True):
+                    sample = "मुझे कल से पेट में बहुत दर्द हो रहा है।"
+                    st.session_state["original_transcript"] = sample
+                    with st.spinner("Processing Hindi demo..."):
+                        intake = extract_clinical_intake(sample, selected_language="Hindi")
+                        st.session_state["current_intake"] = intake
+                        go_to_page("Doctor View")
+
     with col_output:
         with st.container(border=True):
-            st.markdown("### 🩺 **Structured Clinical Intake Output**")
+            st.markdown(f"### **{t['output_title']}**")
 
             current_intake = st.session_state.get("current_intake")
 
             if not current_intake:
-                st.info("🎙️ Speak or type your symptoms on the left to generate the structured doctor intake form.")
+                st.info(t['output_empty'])
             else:
                 urgency_info = current_intake.get("urgency_info", {})
                 urgency_level = urgency_info.get("urgency", "ROUTINE")
                 reasons = urgency_info.get("reasons", [])
 
-                # High Contrast Triage Banner
                 if urgency_level == "HIGH PRIORITY":
                     st.markdown('<div class="badge-high-v2">🚩 HIGH PRIORITY</div>', unsafe_allow_html=True)
                 elif urgency_level == "PRIORITY":
@@ -607,7 +831,6 @@ def show_patient_intake_page():
 
                 st.markdown("<br>", unsafe_allow_html=True)
 
-                # High Contrast Clinical Intake Table
                 st.markdown(f"""
                 <table style="width:100%; border-collapse:collapse; color:#172033;">
                     <tr style="border-bottom:1px solid #E2E8F0;">
